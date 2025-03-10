@@ -21,7 +21,7 @@ from dashboard import views
 from ticket import views as ticket_view
 
 urlpatterns = [
-    path("dashboard/", views.dash , name='dashboard'),
+    path("", views.dash , name='dashboard'),
     path("tickets/" , ticket_view.tickets , name="tickets"),
     path("admin/", admin.site.urls),
 ]
